@@ -1,6 +1,6 @@
-\documentclass[UTF8, 12pt, a4paper]{ctexbook}
+\documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
 
-\usepackage{geometry}
+\usepackage[hcentering,bindingoffset=8mm]{geometry}
 \usepackage{fontspec}
 \usepackage{indentfirst}
 \usepackage{hyperref}
@@ -32,12 +32,19 @@
 
 \title{\fontsize{30pt}{40pt}\selectfont \textbf{费曼物理学讲义 \\ 第一卷}}
 \author{\fontsize{18pt}{22pt}\selectfont 【美】理查德·费曼(R.P.Feynman)}
+\date{}
 
 \begin{document}
 
 \maketitle
+\newpage
+
+\thispagestyle{empty}
 
 \chapter*{费曼自序}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
 
 这是我前年与去年在加利福尼亚理工学院对一二年级学生讲授物理学的讲义。当然，这本讲义并不是课堂讲授的逐字逐句记录，而是已经经过了编辑加工，有的地方多一些，有的地方少一些。我们的课堂讲授只是整个课程的一部分。全班180个学生每周两次聚集在大教室里听课，然后分成15到20人的小组在助教辅导下进行复习巩固。此外，每周还有一次实验课。
 
@@ -89,6 +96,11 @@
 
 \tableofcontents
 
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
 \include{./Chapters/Chapter1}
 
 \include{./Chapters/Chapter2}
@@ -96,5 +108,7 @@
 \include{./Chapters/Chapter3}
 
 \include{./Chapters/Chapter4}
+
+\include{./Chapters/Chapter5}
 
 \end{document}
