@@ -96,10 +96,10 @@
 消去$m$,我们得到在$x$方向上的加速度是一个常数，并等于$g$。当然，这就是众所周知的重力作用下的自由落体定律，由此可得到方程
 \begin{equation}
     \label{Eq:I:9:10}
-    \begin{split}
-        v_x=v_0+gt~~~~~~ \\
-        x=x_0+v_0t+\frac{1}{2}gt^2
-    \end{split}
+    \begin{aligned}
+        v_x&=v_0+gt \\
+        x&=x_0+v_0t+\frac{1}{2}gt^2
+    \end{aligned}
 \end{equation}
 
 \begin{wrapfigure}{r}{0.45\textwidth}
@@ -128,14 +128,10 @@
     x(t+\varepsilon)=x(t)+\varepsilon v_x(t)
 \end{equation}
 $\varepsilon $越小，这个表达式越精确，即使$\varepsilon $不是小到趋于零，此式仍能达到有用的精确度。现在，速度又如何呢？为了求出后一时刻的速度，即t+e时刻的速度，我们需要知道速度怎样变化，即加速度。我们将怎样去求加速度呢？动力学定律就在这种地方起作用。动力学定律告诉我们加速度有多大。它说加速度是一$x$，且
-\begin{equation}
-    \label{Eq:I:9:14}
-    v_x(t+\varepsilon)=v_x(t)+\varepsilon a_x(t)
-\end{equation}
-\begin{equation}
-    \label{Eq:I:9:15}
-    ~~~~~~~~~~~~~=v_x(t)-\varepsilon x(t)
-\end{equation}
+\begin{align}
+    v_x(t+\varepsilon)&=v_x(t)+\varepsilon a_x(t) \\
+    &=v_x(t)-\varepsilon x(t)
+\end{align}
 式(9.14)只是运动学的方程，它表明速度的变化是由于存在加速度。但式(9.15)是动力学的方程。因为它将加速度和力联系起来，它表明对于这个特殊问题，在这个特定时刻，你可以用一$x(t)$来代替加速度。因此，如果我们知道在一给定时刻的$x$与$v$两者，我们就知道加速度，而这又告诉我们新的速度，于是又可知道新的位置——这就是动力学方程的含义所在；由于有力，速度改变了一点点，而由于有速度，位置又改变了一点点。
 
 \section{方程的数值解}

@@ -17,6 +17,7 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage[section]{placeins}
+\usepackage{shorttoc}
 
 \providecommand{\numb}[1]{{~\num{#1}~}}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
@@ -128,6 +129,10 @@
 
 \chapter*{费曼自序}
 
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{Chapter0/Feynman}
+\end{wrapfigure}
 这是我前年与去年在加利福尼亚理工学院对一二年级学生讲授物理学的讲义。当然，这本讲义并不是课堂讲授的逐字逐句记录，而是已经经过了编辑加工，有的地方多一些，有的地方少一些。我们的课堂讲授只是整个课程的一部分。全班180个学生每周两次聚集在大教室里听课，然后分成15到20人的小组在助教辅导下进行复习巩固。此外，每周还有一次实验课。
 
 在这些讲授中，我们想要抓住的特殊问题是，要使充满热情而又相当聪明的中学毕业生进入加利福尼亚理工学院后仍旧保持他们的兴趣。他们在进入学院前就听说过不少关于物理学是如何有趣以及如何引人入胜——相对论、量子力学以及其他的新概念。但是，一旦他们学完两年我们以前的那种课程后，许多人就泄气了，因为教给他们意义重大、新颖的现代的物理概念实在太少。他们被安排去学习像斜面、静电学以及诸如此类的内容，两年过去，没什么收获。问题在于，我们是否有可能设置一门课程能够顾全那些比较优秀的、兴致勃勃的学生，使其保持求知热情。
@@ -176,6 +181,10 @@
 
 \hfill 1963年7月
 
+\shorttoc{目录}{0}
+
+\renewcommand*\contentsname{详细目录}
+\setcounter{tocdepth}{2}
 \tableofcontents
 
 \newpage
@@ -204,5 +213,9 @@
 \include{./Chapters/Chapter10}
 
 \include{./Chapters/Chapter11}
+
+\include{./Chapters/Chapter12}
+
+\include{./Chapters/Chapter13}
 
 \end{document}

@@ -82,21 +82,21 @@
 现在我们来讨论角方位对于物理定律的影响。让我们来看一看乔和莫的游戏是否还能重演。这一次，为了避免不必要的麻烦，我们假定乔和莫采用同一个坐标原点（我们已经证明过，坐标轴能够平移到另一个地方）。假定莫的轴相对于乔的轴转过一个角度$\theta$。这两个坐标系如图11.2所示。该图只限于两维的情况。考虑任意一点$P$，在乔系统中其坐标为$(x,~y)$，在莫系统中为	$(x',~y')$。和前面一样，我们将从用$x$、$y$和$\theta$来表示坐标$x'$和$y$开始。为此，首先从$P$点向四个轴各画一条垂线，并画出$AB$垂直于$PQ$。从图上可以看出$x'$可以写成沿$x'$轴的两段长度之和，$y'$可写成沿着$AB$的两段长度之差。所有这些长度都能用（11.5）式中的$x$、$y$和$\theta$来表示，其中我们还增加了一个第三维的方程式
 \begin{equation}
     \label{Eq:I:11:5}
-    \begin{split}
-        x'=x cos \theta + y sin \theta \\
-        y'=y cos \theta - x sin \theta \\
-        z'=z~~~~~~~~~~~~~~~~~~~~
-    \end{split}
+    \begin{aligned}
+        x'&=x cos \theta + y sin \theta \\
+        y'&=y cos \theta - x sin \theta \\
+        z'&=z
+    \end{aligned}
 \end{equation}
 
 下一步是按照上述的一般方法来分析两个观察者所看到的那些力之间的关系。假设有一个力$F$，已经被分解成分量$F_x$和$F_y$（从乔看来）作用在图11.2中$P$点处的一个质量为$m$的质点上。为了简化起见，我们把两组坐标轴的原点都移到$P$点，如图11.3所示。莫沿着他的坐标轴看到的$F$的分量是$F_{x'}$和$F_{y'}$。$F_x$在沿$x'$和$y'$轴的方向上都有分量，同样$F_y$，在这两个轴的方向上也有分量。为了用$F_x$和$F_y$，来表示$F_{x'}$，，我们把它们沿$x'$轴的分量加起来，以同样的办法用$F_x$，和$F_y$，来表示$F_{y'}$。结果是
 \begin{equation}
     \label{Eq:I:11:6}
-    \begin{split}
-        F_{x'}=F_x cos \theta + F_y sin \theta \\
-        F_{y'}=F_y cos \theta - F_x sin \theta \\
-        F_{z'}=F_z~~~~~~~~~~~~~~~~~~~~~~
-    \end{split}
+    \begin{aligned}
+        F_{x'}&=F_x cos \theta + F_y sin \theta \\
+        F_{y'}&=F_y cos \theta - F_x sin \theta \\
+        F_{z'}&=F_z
+    \end{aligned}
 \end{equation}
 有趣的是这里看到了一种出人意外的，然而是非常重要的情况：分别表示$P$点坐标的式（11.5）和力F的分量的式（11.6）具有相同的形式。
 
@@ -126,20 +126,20 @@
 是否也正确呢？为了检验这些方程，我们分别计算式子的左端和右端，然后比较其结果。为了计算左端，用$m$乘以式（11.5），并求出它对时间的两次微商，这里假定角度$\theta$为常数。这就给出
 \begin{equation}
     \label{Eq:I:11:8}
-    \begin{split}
-        m(\frac{d^2x'}{dt^2})=m(\frac{d^2x}{dt^2}) cos \theta + m(\frac{d^2y}{dt^2}) sin \theta \\
-        m(\frac{d^2y'}{dt^2})=m(\frac{d^2y}{dt^2}) cos \theta - m(\frac{d^2x}{dt^2}) sin \theta \\
-        m(\frac{d^2z'}{dt^2})=m(\frac{d^2z}{dt^2})~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    \end{split}
+    \begin{aligned}
+        m(\frac{d^2x'}{dt^2})&=m(\frac{d^2x}{dt^2}) cos \theta + m(\frac{d^2y}{dt^2}) sin \theta \\
+        m(\frac{d^2y'}{dt^2})&=m(\frac{d^2y}{dt^2}) cos \theta - m(\frac{d^2x}{dt^2}) sin \theta \\
+        m(\frac{d^2z'}{dt^2})&=m(\frac{d^2z}{dt^2})
+    \end{aligned}
 \end{equation}
 然后再计算式（11.7）的右边。把式（11.1）代入式（11.6），这就得出
 \begin{equation}
     \label{Eq:I:11:9}
-    \begin{split}
-        F_{x'}=m(\frac{d^2x}{dt^2}) cos \theta + m(\frac{d^2y}{dt^2}) sin \theta \\
-        F_{y'}=m(\frac{d^2y}{dt^2}) cos \theta - m(\frac{d^2x}{dt^2}) sin \theta \\
-        F_{z'}=m(\frac{d^2z}{dt^2})~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    \end{split}
+    \begin{aligned}
+        F_{x'}&=m(\frac{d^2x}{dt^2}) cos \theta + m(\frac{d^2y}{dt^2}) sin \theta \\
+        F_{y'}&=m(\frac{d^2y}{dt^2}) cos \theta - m(\frac{d^2x}{dt^2}) sin \theta \\
+        F_{z'}&=m(\frac{d^2z}{dt^2})
+    \end{aligned}
 \end{equation}
 
 看哪！式（11.8）和（11.9）右端是一样的；因此，我们断定，如果牛顿定律对一组坐标轴是正确的，它们对其他任何一组坐标轴也是正确的。从刚才对坐标轴的平移和转动证实的结果得出一些推论：第一，没有一个人能宣称他的特定坐标轴是唯一的，虽然对于某些特定的问题，这些坐标轴可以带来方便。例如，把重力的方向作为某一个轴的方向是比较方便的，但是这在物理上并不是必须的。第二，它意味着如果整套设备完全装在一起，即所有产生力的装置都包含在这套设备的内部，当把它转过一个角度时，它的运转情况不变。
