@@ -1,4 +1,4 @@
-\special{pdf:encrypt userpw () ownerpw (GfmUP5es9tAdpBZ5xq2A) length 128 perm 0}
+%\special{pdf:encrypt userpw () ownerpw (GfmUP5es9tAdpBZ5xq2A) length 128 perm 0}
 \documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
 
 \usepackage[hcentering,bindingoffset=8mm]{geometry}
@@ -19,6 +19,13 @@
 \usepackage{mathtools}
 \usepackage[section]{placeins}
 \usepackage{shorttoc}
+\usepackage{tikz}
+
+%\AddToHook{shipout/foreground}{
+%  \begin{tikzpicture}[remember picture,overlay]
+%    \node[black,rotate=45,scale=8,opacity=0.3] at (current page.center) {岩湖上的野草}; 
+%  \end{tikzpicture}
+%}
 
 \providecommand{\numb}[1]{{~\num{#1}~}}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
@@ -31,7 +38,7 @@
     urlcolor=black
 }
 
-\setmainfont{Arial}
+\setmainfont{Times New Roman}
 \setCJKmainfont[AutoFakeBold=true]{SimSun}
 
 \geometry{a4paper,scale=0.8}
@@ -224,5 +231,7 @@
 \include{./Chapters/Chapter15}
 
 \include{./Chapters/Chapter16}
+
+\include{./Chapters/Chapter17}
 
 \end{document}
