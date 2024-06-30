@@ -55,7 +55,7 @@
 \begin{equation*}
     \frac{dx'}{dt}=\frac{d}{dt}(x-a)=\frac{dx}{dt}-\frac{da}{dt}
 \end{equation*}
-这里，我们假定莫的原点相对于乔是固定（不动）的，因此，$a$是一个常数，$\frac{da}{dt}=0$，这样就得到
+这里，我们假定莫的原点相对于乔是固定（不动）的，因此，$a$是一个常数，$da/dt=0$，这样就得到
 \begin{equation*}
     \frac{dx'}{dt}=\frac{dx}{dt}
 \end{equation*}
@@ -83,8 +83,8 @@
 \begin{equation}
     \label{Eq:I:11:5}
     \begin{aligned}
-        x'&=x cos \theta + y sin \theta \\
-        y'&=y cos \theta - x sin \theta \\
+        x'&=x \cos \theta + y \sin \theta \\
+        y'&=y \cos \theta - x \sin \theta \\
         z'&=z
     \end{aligned}
 \end{equation}
@@ -93,8 +93,8 @@
 \begin{equation}
     \label{Eq:I:11:6}
     \begin{aligned}
-        F_{x'}&=F_x cos \theta + F_y sin \theta \\
-        F_{y'}&=F_y cos \theta - F_x sin \theta \\
+        F_{x'}&=F_x \cos \theta + F_y \sin \theta \\
+        F_{y'}&=F_y \cos \theta - F_x \sin \theta \\
         F_{z'}&=F_z
     \end{aligned}
 \end{equation}
@@ -129,8 +129,8 @@
 \begin{equation}
     \label{Eq:I:11:8}
     \begin{aligned}
-        m(\frac{d^2x'}{dt^2})&=m(\frac{d^2x}{dt^2}) cos \theta + m(\frac{d^2y}{dt^2}) sin \theta \\
-        m(\frac{d^2y'}{dt^2})&=m(\frac{d^2y}{dt^2}) cos \theta - m(\frac{d^2x}{dt^2}) sin \theta \\
+        m(\frac{d^2x'}{dt^2})&=m(\frac{d^2x}{dt^2}) \cos \theta + m(\frac{d^2y}{dt^2}) \sin \theta \\
+        m(\frac{d^2y'}{dt^2})&=m(\frac{d^2y}{dt^2}) \cos \theta - m(\frac{d^2x}{dt^2}) \sin \theta \\
         m(\frac{d^2z'}{dt^2})&=m(\frac{d^2z}{dt^2})
     \end{aligned}
 \end{equation}
@@ -138,8 +138,8 @@
 \begin{equation}
     \label{Eq:I:11:9}
     \begin{aligned}
-        F_{x'}&=m(\frac{d^2x}{dt^2}) cos \theta + m(\frac{d^2y}{dt^2}) sin \theta \\
-        F_{y'}&=m(\frac{d^2y}{dt^2}) cos \theta - m(\frac{d^2x}{dt^2}) sin \theta \\
+        F_{x'}&=m(\frac{d^2x}{dt^2}) \cos \theta + m(\frac{d^2y}{dt^2}) \sin \theta \\
+        F_{y'}&=m(\frac{d^2y}{dt^2}) \cos \theta - m(\frac{d^2x}{dt^2}) \sin \theta \\
         F_{z'}&=m(\frac{d^2z}{dt^2})
     \end{aligned}
 \end{equation}
@@ -223,7 +223,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
 \end{wrapfigure}
 定义减法，这实际上是一回事。结果如图\ref{figure:矢量的减法}所示。这个图表示$\boldsymbol{d}=\boldsymbol{a}-\boldsymbol{b}=\boldsymbol{a}+(-\boldsymbol{b})$；同时，我们还看到采用等效关系$\boldsymbol{a}=\boldsymbol{b}+\boldsymbol{d}$，从$\boldsymbol{a}$和$\boldsymbol{b}$很容易求出$\boldsymbol{a}-\boldsymbol{b}$的差。因而求矢量的差甚至比求矢量的和更容易：我们只要从$\boldsymbol{b}$的“顶端”到$\boldsymbol{a}$的“顶端”画一个矢量，就得到$\boldsymbol{a}-\boldsymbol{b}$！
 
-下面来讨论速度。为什么速度是矢量呢？如果位置是由三个坐标$(x,~y,~z)$给定，那么速度是什么呢？速度由$\frac{dx}{dt}$、$\frac{dy}{dt}$和$\frac{dz}{dt}$给出。这是不是矢量？我们可以通过对表示式（\ref{Eq:I:11:5}）求微商来判明$\frac{dx'}{dt}$是否以恰当的方式变换。我们看到$\frac{dx}{dt}$和$\frac{dy}{dt}$的确是按照与$x$和$y$同样的规律变换，因此这个时间的微商是一个矢量。因而速度是矢量。我们可以把速度写成一个有趣的形式
+下面来讨论速度。为什么速度是矢量呢？如果位置是由三个坐标$(x,~y,~z)$给定，那么速度是什么呢？速度由$dx/dt$、$dy/dt$和$dz/dt$给出。这是不是矢量？我们可以通过对表示式（\ref{Eq:I:11:5}）求微商来判明$dx'/dt$是否以恰当的方式变换。我们看到$dx/dt$和$dy/dt$的确是按照与$x$和$y$同样的规律变换，因此这个时间的微商是一个矢量。因而速度是矢量。我们可以把速度写成一个有趣的形式
 \begin{equation*}
     \boldsymbol{v}=\frac{d\boldsymbol{r}}{dt}
 \end{equation*}
@@ -234,7 +234,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
     \label{Eq:I:11:10}
     \boldsymbol{v}=\lim_{\Delta t \to \infty} \frac{\Delta \boldsymbol{r}}{\Delta t}=\frac{d \boldsymbol{r}}{dt}
 \end{equation}
-因为速度是两个矢量之差，所以它也是一个矢量。因为它的分量是$\frac{dx}{dt}$，$\frac{dy}{dt}$和$\frac{dz}{dt}$，所以这也是速度的正确定义。实际上，从这个论证我们看到，将任一矢量对时间求微商，得到的是一个新的矢量。因此，我们有好几种方法得出新的矢量：（1）乘以一个常数；（2）对时间求微商；（3）两个矢量相加或相减。
+因为速度是两个矢量之差，所以它也是一个矢量。因为它的分量是$dx/dt$，$dy/dt$和$dz/dt$，所以这也是速度的正确定义。实际上，从这个论证我们看到，将任一矢量对时间求微商，得到的是一个新的矢量。因此，我们有好几种方法得出新的矢量：（1）乘以一个常数；（2）对时间求微商；（3）两个矢量相加或相减。
 
 \section{牛顿定律的矢量表示法}
 
@@ -276,7 +276,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
     \end{minipage}
 \end{figure}
 
-加速度是速度矢量的变化率的事实有助于我们计算在某些复杂情况下的加速度。例如，假定一个粒子在某一复杂曲线上运动（图\ref{figure:曲线轨道示意图}），并且在一个给定的时刻$t_1$,具有一定速度$v_1$,稍微过一会儿，当到达另一时刻$t_2$时，具有另一个速度$v_2$。什么是加速度呢？答案是：加速度等于这个微小的时间间隔去除速度之差，因此，这里要用到两个速度的差。我们怎样来求两个速度的差呢？为了把两个矢量相减，我们在$v_2$和$v_1$的“端点”之间画一个矢量，即，如图\ref{figure:曲线轨道示意图}所示用$\Delta v$来表示两个矢量之差，对吗？不对！只有当两个矢量的尾端在一起时，才可以这样做！如果我们把一个矢量移到别的地方，再在它们之间画一条线，这是毫无意义的。这一点务必注意！我们需要画一个新的图来做这两个矢量的减法。在图\ref{figure:计算加速度的矢量图}中，$v_1$和$v_2$画成与图\ref{figure:曲线轨道示意图}中的相应的部分平行且相等，这样我们就能讨论加速度了。当然，加速度就是$\frac{\Delta v}{\Delta t}$。有趣的是，我们可以把速度差分成两个部分；即可以认为加速度具有两个分量，一个是沿路径的切线方向的分量$\Delta v_{\parallel}$,另一个是与路径相垂直的分量$\Delta v_{\bot}$,如图\ref{figure:计算加速度的矢量图}所示。当然，路径的切向加速度就是速度长度的变化，也就是速率$v$的平方而变化
+加速度是速度矢量的变化率的事实有助于我们计算在某些复杂情况下的加速度。例如，假定一个粒子在某一复杂曲线上运动（图\ref{figure:曲线轨道示意图}），并且在一个给定的时刻$t_1$,具有一定速度$v_1$,稍微过一会儿，当到达另一时刻$t_2$时，具有另一个速度$v_2$。什么是加速度呢？答案是：加速度等于这个微小的时间间隔去除速度之差，因此，这里要用到两个速度的差。我们怎样来求两个速度的差呢？为了把两个矢量相减，我们在$v_2$和$v_1$的“端点”之间画一个矢量，即，如图\ref{figure:曲线轨道示意图}所示用$\Delta v$来表示两个矢量之差，对吗？不对！只有当两个矢量的尾端在一起时，才可以这样做！如果我们把一个矢量移到别的地方，再在它们之间画一条线，这是毫无意义的。这一点务必注意！我们需要画一个新的图来做这两个矢量的减法。在图\ref{figure:计算加速度的矢量图}中，$v_1$和$v_2$画成与图\ref{figure:曲线轨道示意图}中的相应的部分平行且相等，这样我们就能讨论加速度了。当然，加速度就是$\Delta v/\Delta t$。有趣的是，我们可以把速度差分成两个部分；即可以认为加速度具有两个分量，一个是沿路径的切线方向的分量$\Delta v_{\parallel}$,另一个是与路径相垂直的分量$\Delta v_{\bot}$,如图\ref{figure:计算加速度的矢量图}所示。当然，路径的切向加速度就是速度长度的变化，也就是速率$v$的平方而变化
 \begin{equation}
     \label{Eq:I:11:15}
     a_{\parallel}=\frac{dv}{dt}
@@ -289,9 +289,9 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
 \begin{equation*}
     a_{\bot}=v(\frac{\Delta \theta}{\Delta t})
 \end{equation*}
-现在需要知道$\frac{\Delta \theta}{\Delta t}$的值，它可以用下面的办法求出：如果在一给定时刻，曲线近似于某一个半径为$R$的圆周，则在$\Delta t$时间内走过的距离$s$就是$v \Delta t$,这里$v$是速率
+现在需要知道$\Delta \theta/\Delta t$的值，它可以用下面的办法求出：如果在一给定时刻，曲线近似于某一个半径为$R$的圆周，则在$\Delta t$时间内走过的距离$s$就是$v \Delta t$,这里$v$是速率
 \begin{equation*}
-    \Delta \theta =v(\frac{\Delta t}{R})\text{ 或 }\frac{\Delta \theta}{\Delta t}=\frac{v}{R}
+    \Delta \theta =v(\frac{\Delta t}{R})~\text{或}~\frac{\Delta \theta}{\Delta t}=\frac{v}{R}
 \end{equation*}
 因此，得出
 \begin{equation}
@@ -344,13 +344,13 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
     \label{Eq:I:11:21}
     \boldsymbol{a} \cdot (\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a} \cdot \boldsymbol{b}+\boldsymbol{b} \cdot \boldsymbol{c}
 \end{equation}
-还有，计算$\boldsymbol{a} \cdot \boldsymbol{b}$有一个不需要计算$\boldsymbol{a}$和$\boldsymbol{b}$的分量的简单的几何方法：$\boldsymbol{a} \cdot \boldsymbol{b}$是$\boldsymbol{a}$的长度和$\boldsymbol{b}$的长度之积乘以它们之间夹角的余弦。为什么？假设我们选一个$x$轴沿$\boldsymbol{a}$方向的特殊的坐标系，在这种情况下，$a_x$是$\boldsymbol{a}$的唯一分量，它当然就是整个$\boldsymbol{a}$的长度。此时方程式（\ref{Eq:I:11:19}）就简化成$\boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x$，这就是$\boldsymbol{a}$的长度乘$\boldsymbol{b}$在$\boldsymbol{a}$方向上的分量，即$bcos\theta$
+还有，计算$\boldsymbol{a} \cdot \boldsymbol{b}$有一个不需要计算$\boldsymbol{a}$和$\boldsymbol{b}$的分量的简单的几何方法：$\boldsymbol{a} \cdot \boldsymbol{b}$是$\boldsymbol{a}$的长度和$\boldsymbol{b}$的长度之积乘以它们之间夹角的余弦。为什么？假设我们选一个$x$轴沿$\boldsymbol{a}$方向的特殊的坐标系，在这种情况下，$a_x$是$\boldsymbol{a}$的唯一分量，它当然就是整个$\boldsymbol{a}$的长度。此时方程式（\ref{Eq:I:11:19}）就简化成$\boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x$，这就是$\boldsymbol{a}$的长度乘$\boldsymbol{b}$在$\boldsymbol{a}$方向上的分量，即$b\cos\theta$
 \begin{equation*}
-    \boldsymbol{a} \cdot \boldsymbol{b}=abcos\theta
+    \boldsymbol{a} \cdot \boldsymbol{b}=ab\cos\theta
 \end{equation*}
-因此，在此特殊的坐标系中，我们已经证明了$\boldsymbol{a} \cdot \boldsymbol{b}$等于$\boldsymbol{a}$之长乘$\boldsymbol{b}$之长再乘$cos\theta$。然而，如果它对一个坐标系成立，则对所有坐标系也成立。因为$\boldsymbol{a} \cdot \boldsymbol{b}$与坐标系无关；这就是我们的论证。
+因此，在此特殊的坐标系中，我们已经证明了$\boldsymbol{a} \cdot \boldsymbol{b}$等于$\boldsymbol{a}$之长乘$\boldsymbol{b}$之长再乘$\cos\theta$。然而，如果它对一个坐标系成立，则对所有坐标系也成立。因为$\boldsymbol{a} \cdot \boldsymbol{b}$与坐标系无关；这就是我们的论证。
 
-点积有什么用处呢？在物理学中有些什么场合需要用到它吗？是的，我们随时都要用到它。例如，在第4章中，动能是$\frac{mv^2}{2}$,如果物体在空间运动，$v^2$应该是速度在$x$、$y$和$z$方向上的分量的平方和，因此按照矢量分析动能的公式是
+点积有什么用处呢？在物理学中有些什么场合需要用到它吗？是的，我们随时都要用到它。例如，在第4章中，动能是$mv^2/2$,如果物体在空间运动，$v^2$应该是速度在$x$、$y$和$z$方向上的分量的平方和，因此按照矢量分析动能的公式是
 \begin{equation}
     \label{Eq:I:11:22}
     K.E.=\frac{1}{2}m(\boldsymbol{v} \cdot \boldsymbol{v})=\frac{1}{2}m(v_x^2+v_y^2+v_z^2)
@@ -363,7 +363,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
     \text{功}=\boldsymbol{F} \cdot \boldsymbol{s}
 \end{equation}
 
-有时讨论矢量在某一方向（比如说竖直方向，因为它就是重力方向）上的分量是很方便的。为此，在我们希望研究的方向上引入一个所谓单位矢量将是很有用的。所谓单位矢量，是指它自身的点积等于1。我们用表示单位矢量，则$\boldsymbol{i} \cdot \boldsymbol{i}=1$。如果要求某矢量在方向上的分量，我们看到点积$\boldsymbol{a} \cdot \boldsymbol{i}$是$acos\theta$，它就是$\boldsymbol{a}$在$\boldsymbol{i}$方向上的分量。这是求分量的一种较好的办法。事实上，它能使我们得出所有的分量，并写出一个很有意思的公式。假定在一个给定的坐标系$x$，$y$，$z$中，我们引入了三个矢量：$x$方向的单位矢量$\boldsymbol{i}$，$y$方向的单位矢量$\boldsymbol{j}$，以及$z$方向的单位矢量$\boldsymbol{k}$。首先请注意$\boldsymbol{i} \cdot \boldsymbol{i}=1$。但$\boldsymbol{i} \cdot \boldsymbol{j}$是什么呢？当两个矢量互相垂直时它们的点积为零。于是
+有时讨论矢量在某一方向（比如说竖直方向，因为它就是重力方向）上的分量是很方便的。为此，在我们希望研究的方向上引入一个所谓单位矢量将是很有用的。所谓单位矢量，是指它自身的点积等于1。我们用表示单位矢量，则$\boldsymbol{i} \cdot \boldsymbol{i}=1$。如果要求某矢量在方向上的分量，我们看到点积$\boldsymbol{a} \cdot \boldsymbol{i}$是$a\cos\theta$，它就是$\boldsymbol{a}$在$\boldsymbol{i}$方向上的分量。这是求分量的一种较好的办法。事实上，它能使我们得出所有的分量，并写出一个很有意思的公式。假定在一个给定的坐标系$x$，$y$，$z$中，我们引入了三个矢量：$x$方向的单位矢量$\boldsymbol{i}$，$y$方向的单位矢量$\boldsymbol{j}$，以及$z$方向的单位矢量$\boldsymbol{k}$。首先请注意$\boldsymbol{i} \cdot \boldsymbol{i}=1$。但$\boldsymbol{i} \cdot \boldsymbol{j}$是什么呢？当两个矢量互相垂直时它们的点积为零。于是
 \begin{equation}
     \label{Eq:I:11:23}
     \begin{split}
