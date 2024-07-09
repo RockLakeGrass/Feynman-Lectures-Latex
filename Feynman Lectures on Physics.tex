@@ -1,7 +1,7 @@
 %\special{pdf:encrypt userpw () ownerpw (GfmUP5es9tAdpBZ5xq2A) length 128 perm 0}
 \documentclass[UTF8, 12pt, a4paper, twoside]{ctexbook}
 
-\usepackage{fontspec, indentfirst, hyperref, siunitx, amssymb, CJK, ulem, wrapfig, graphicx, chemfig, booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable, multicol}
+\usepackage{fontspec, indentfirst, hyperref, siunitx, amssymb, CJK, ulem, wrapfig, graphicx, chemfig, booktabs, float, amsmath, mathtools, shorttoc, tikz, longtable, multicol, pdfpages}
 \usepackage[hcentering,bindingoffset=8mm]{geometry}
 \usepackage[justification=centering]{caption}
 \usepackage[section]{placeins}
@@ -38,11 +38,17 @@
 
 \graphicspath{{Figures/}}
 
-\title{\fontsize{30pt}{40pt}\selectfont \textbf{费曼物理学讲义 \\ 第一卷}}
+\title{\fontsize{30pt}{40pt}\selectfont \textbf{费曼物理学讲义}}
 \author{\fontsize{16pt}{20pt}\selectfont 【美】理查德·费曼(R.P.Feynman)}
 \date{}
 
 \begin{document}
+
+\begin{titlepage}	
+    \includepdf[pages={1}]{Cover.pdf}
+\end{titlepage}
+
+\thispagestyle{empty}
 
 \maketitle
 \newpage
@@ -190,6 +196,8 @@
 
 \pagenumbering{arabic}
 \setcounter{page}{1}
+
+\part{力学、辐射和热学}
 
 \include{./Chapters/Chapter1}
 
