@@ -47,15 +47,6 @@ xelatex "Feynman Lectures on Physics.tex"
     └── VolumeIII/                     # 第三卷插图
 ```
 
-## 🧹 仓库清理 Repository Cleanup
-
-为保持仓库简洁，已移除所有中间编译产物：
-- `*.aux` - 辅助文件
-- `*.gz` - 压缩文件
-- `*.fls` - 文件列表
-
-最终的 PDF 文件保留在仓库中供直接下载使用。
-
 ## 🤝 贡献 Contributing
 
 欢迎贡献新的章节、修正错误或改进排版！
