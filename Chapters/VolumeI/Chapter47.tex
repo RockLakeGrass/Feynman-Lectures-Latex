@@ -1,0 +1,249 @@
+\chapter{声、波动方程}
+
+\section{波}
+
+本章我们将讨论波动 现象。这种现象出现在整个物理学的许多领域中，所以我们应当把注意力放在它上面，不仅是因为这里所考察的特殊例子——声，而且也因为有关的概念在物理学的所有分支中有着相当广泛的应用。
+
+我们在研究谐振子时已经指出过，振动系统的例子不仅在力学中存在，而且在电学中也同样存在。波动与振动系统有关，但波动不仅仅表现为在一处的随时间的振动，并且还在空间中传播。
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.38\textwidth]{Chapter47/频率略有差异的两个波源在时间上的干涉形成拍}
+    \caption{频率略有差异的两个波源在时间上的干涉形成拍}
+    \label{figure:频率略有差异的两个波源在时间上的干涉形成拍}
+\end{wrapfigure}
+
+实际上我们已经研究过波动。在研究光学，讨论光的波动性质时，我们曾特别研究若干位于不同地方以同一频率振动的波源发出的几列波在空间的干涉现象。而在光波即电磁波以及其他任何形式的波动中所出现的两个重要现象，我们还不曾讨论。其中一个现象就是，波在时间 上而不是在空间上的干涉 现象。如果两个声源的频率稍有差别，在我们同时收听这两个声音时，有时声波波峰一起来，有时则是波峰和波谷一起来（见图\ref{figure:频率略有差异的两个波源在时间上的干涉形成拍}）。这样所产生的声音的起伏就形成拍现象，或者说时间上的干涉。第二个重要现象涉及波型，当波动约束在一定体积中，在界面之间来回反射时，就形成了这种现象。
+
+当然，在研究电磁波时，本来可以对这些效应加以讨论。我们之所以没有这样做，是因为只使用一种例子也许会使我们不能体会到实际上已同时学习了许多不同的课题。为了强调波动概念的普适性超出了电动力学范围，我们这里考虑一种不同的例子，特别是声波的情况。
+
+我们在海岸边缘见到过由长长的大浪形成的水波翻腾的情况，也见过由表面张力的涟漪形成的小水波。这又是一些波动的例子。再举另外一种例子，在固体中有两类弹性波：一类是压缩波（或纵波），固体中的粒子沿着波传播的方向来回振动（气体中的声波就属于这一类）；另一类是横波，固体中的粒子在垂直于波传播的方向上振动。地震波包括了这两类弹性波，它们是由某处地壳的运动而造成的。
+
+在现代物理学中还可找到另一类波的例子。这类波给出了在确定地方发现粒子的概率振幅，即我们已经讨论过的“物质波”。它们的频率正比于能量，波数则正比于动量。这就是量子力学中的波。
+
+在本章中我们将只考虑波速与波长无关的波动。例如，光在真空中的传播情况就是
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.38\textwidth]{Chapter47/实线表示在某一瞬时电场的可能情况，虚线表示在时间t后的电场}
+    \caption{实线表示在某一瞬时电场的可能情况，虚线表示在时间$t$后的电场}
+    \label{figure:实线表示在某一瞬时电场的可能情况，虚线表示在时间t后的电场}
+\end{wrapfigure}
+如此。对无线电波、蓝光、绿光或任何其他波长的光来说，光速都相同。由于这种性质，当初开始描写波现象时，我们并没有指出波在传播这一点。我们只是说，如果有一个电荷在某处运动，那么离开它$x$处的电场正比于在较早时刻$(t -x /c)$的加速度，而不是在$t$时刻的加速度。所以，如果我们画出某个瞬间空间中的电场，如图\ref{figure:实线表示在某一瞬时电场的可能情况，虚线表示在时间t后的电场}所示，那么经过时间$t$后的电场将移动距离$ct$，如图中所示。在这里所取的一维例子中，从数学上我们可以说，对这个一维的例子，电场是$(x -ct)$的函数。我们看到，当$t =0$时，它是$x$的某个函数。如果我们考虑较后一个时刻，只需适当增加$x$值就可以得到同样的电场值。举例说，如果在$t=0$时，电场极大值出现在$x =3$处，那么，为了找到在时刻$t$电场极大值的新位置，就得有
+\begin{equation*}
+    x-ct=3 ~~~~\text{或}~~~~ x=3+ct
+\end{equation*}
+我们看到，这样的函数表示了波的传播。
+
+所以，$f(x-ct)$这种函数就表示了波。我们可以这样简单地总结波的描述
+\begin{equation*}
+    f(x -ct)=f[x +\Delta x -c (t+\Delta t)]
+\end{equation*}
+这里$\Delta x =c \Delta t$。当然，还有另一种可能，即波源不是像图\ref{figure:实线表示在某一瞬时电场的可能情况，虚线表示在时间t后的电场}中所示的那样在左边，而是在右边，结果波往负$x$方向传播。这时就要用$g(x +ct)$来描写波。
+
+此外，还存在这样一种可能性，空间同时存在着比方说一列以上的波，那么总电场就是两个独立传播的电场的和。电场的这种性质可以叙述为，假定$f_1(x-ct)$是一列波，$f_2(x-ct)$是另一列波，那么它们的和也是波。这就叫做叠加原理。叠加原理对于声波来说同样有效。
+
+我们都熟悉这样一个事实：声音产生以后，我们所听到的声音的顺序与产生时的顺序完全相同。假定高频的声音传播得比低频的快，那么短促尖锐的噪声将发生在乐声之后。类似地，如果红光跑得比蓝光快，那么当白光闪一下后，人们就会先看到红色，接着是白色，最后是蓝色。我们所知道的事实表明，情况并非如此。声与光在空气中的传播速率都非常接近于跟频率无关。跟频率有关的波传播的例子将在第48章中讨论。
+
+对于光（电磁波）的情况，我们提供了一条规则来确定因电荷的加速而在某点所产生的电场。人们现在可能也期望有这么一条规则，由此能借助声源本身的运动并考虑到声传播时间引起的推迟，确定声源外一给定距离上空气的某个物理量如压强的数值。对于光来说，这种做法是行得通的，因为我们所要知道的一切就是一处的电荷对在另一处的另一个电荷施加作用力。从一处到另一处的传播细节并不是绝对重要的。然而，在声的情况下，我们知道它通过声源与收听者之间的空气而传播。因此，无疑人们会提出一个很自然的问题：在任何给定时刻，空气的压强有多大。另外，我们还想确切地知道空气怎样运动。在电学情况下，我们可以接受一条规则，因为我们可以说自己还不知道电学定律，但对于声来说，我们就不能讲同样的话了。因为整个过程应当作为力学定律的结果而得到理解，所以我们当然不会满足于仅仅陈述声压如何通过空气而传播的规则。简言之，声学是力学的一门分支，所以它要用牛顿定律来解释。声波由一处往另一处的传播，只是力学定律及传播声的那种物质的性质（如果在气体中传播，就指气体的性质，如果在液体或固体中传播，就指这些介质的性质）的推论。以后我们将用类似的方法从电动力学定律导出光的性质和光波的传播。
+
+\section{声的传播}
+
+我们准备从牛顿定律导出声波在声源与接收者之间 传播的特性，而对声源与接收者之间的相互作用将不予考虑。通常我们强调的是推导的结论而不是某一特殊推导过程本身。在本章中我们将采取相反的观点。在某种意义上，这里的要点就在于推导本身。在我们知道了旧现象的规律之后，能借助于已知现象来解释新现象这件事或许是数学物理学的最伟大艺术。数学物理学家要解决两个问题：一个是给定了方程之后求出解答，另一个是找出描写新现象的物理方程。这里的推导是属于后一种情形的一个例子。
+
+我们在这里将取一个最简单的例子——声波的一维传播。要进行这样的推导，首先必须对所发生的事情有一定的了解。这里所包含的基本事实就是，如果一个物体在空气中的某个地方运动着，我们就观察到有一种扰动在空气中传开。这是怎样的一种扰动？我们可以认为物体的运动产生了压强上的变化。当然，如果物体的运动相当缓慢，空气便只是绕着它流过去。但我们要讨论的是快速的运动，因此空气没有足够的时间作这样的流动。于是，随着物体的运动空气被压缩，引起压强上的变化，这种变化推动了周围的气体，接着这部分气体又被压缩，这又引起额外的压强，这样波就传播开了。
+
+现在我们要把这个过程写成公式。首先必须决定所需要的变量。在这个特定问题中，我们要知道空气移动了多远，所以在声波中空气的位移 肯定是一个有关的变量。此外，我们还要描述，在空气移动时它的密度 怎样变化。空气压强 也会发生改变，所以这又是一个值得注意的变量。当然，空气还有速度 ，因而我们必须描写空气粒子的速度。这些粒子还有加速度 ——但是，当我们列举了这么多变量之后，立即会认识到，如果知道了空气位移 怎样随时间而变化，那么速度和加速度也就知道了。
+
+我们已经说过，要考虑的是一维波动。如果离开波源足够远，以致所谓的波前 非常接近于平面，那么就可以这样处理。取一个复杂性最小的例子会使论证比较简单一些。因此，我们可以说：位移$\chi$只取决于$x$和$t$，而与$y$和$z$无关。所以我们用$\chi(x,~t)$来描写空气的位移。
+
+这个描述完全吗？看来远远谈不上完全。因为我们一点也不知道空气分子运动的详情。它们往四面八方运动，这种情况肯定不能用函数$\chi(x,~t)$来描写。从分子动理论的观点来看，假定在一个地方分子密度较高，而在邻近的地方分子密度较低，那么分子就会从密度较高的区域跑向密度较低的区域，使得差异抵消。显然，这样一来就不会产生振动，于是也就没有声音。为了得到声波，必须出现下述情况：当分子由密度较高及压强较大的区域冲出去时，它们将把动量传递给邻近的密度较低区域中的分子。为了使声波得以产生，密度与压强上有变化的区域必须远远大于分子在与其他分子进行碰撞前所走过的距离。这段距离即平均自由程，而压强的波峰与波谷之间的距离必须远远超过它，不然分子就会自由地从波峰跑向波谷，一下子把波抹平。
+
+十分清楚，我们是在远大于平均自由程的尺度上来描写气体行为的，所以不用个别分子的运动来描写气体的性质。例如，所谓位移就是指一小块气体的质心的位移，而压强或密度则是这一小块区域中的压强或密度。我们称压强为$P$，密度为$\rho$ ，它们都是$x$和$t$的函数。我们必须记住这种描写只是近似的，只有当气体的有关性质随距离的变化不太快时才成立。
+
+\section{波动方程}
+
+声波现象的物理内容包括了三个特征：
+
+\uppercase\expandafter{\romannumeral1}. 气体的移动使密度发生变化。
+
+\uppercase\expandafter{\romannumeral2}. 密度上的变化对应着压强上的变化。
+
+\uppercase\expandafter{\romannumeral3}. 压强的不相等导致气体的运动。
+
+我们首先考虑\uppercase\expandafter{\romannumeral2}。对于气体、液体或固体，压强是密度的某个函数。在声波抵达之前，我们有一个平衡状态，它的压强为$P_0$，对应的密度是$\rho_0$。介质中的压强$P$与密度$\rho$由某种函数关系$P=f(\rho)$联系起来，特别是平衡状态时的压强$P_0$由$P_0 =f(\rho_0)$给定。声波中的压强相对于平衡值的变化是极其微小的。量度压强的一个方便单位是巴（bar）：$1~\text{bar}=10^5~\text{N}\cdot \text{m}^{-2}$。1 atm非常接近于1 bar，即$1~\text{atm}=1.013~3~\text{bar}$。在声学中我们采用声强的对数标度，因为耳朵的灵敏度近似地按对数变化。这个标度是分贝（dB）标度，对于振幅为$P$的压强，其声压级$I$用下式来定义
+\begin{equation}
+    \label{Eq:I:47:1}
+    I=20\lg\left(\frac{P}{P_{\text{参}}}\right)~\text{dB}
+\end{equation}
+这里参考压强$P_\text{参} =2\times 10^{-10}~\text{bar}$\footnote{在这样选择$P_\text{参}$时，相应的$P$不是声波的峰值压强，而是“方均根”压强，它等于$1/\sqrt{2}$乘以峰值。}。如压强振幅为$P =10^3 P_\text{参} =2\times 10^{-7}~\text{bar}$，与之对应的就是60 dB的中等强度的声音。我们看到，在声波中压强的变化与平衡压强或平均压强一个大气压相比极其微小，位移和密度的变化相应地也极其微小。在爆炸时，变化就不是这么小了；所产生的额外压强可能超过1个大气压。这么大的压强变化将导致新的效应，我们在以后再来讨论。对声音来说，通常我们不考虑超过100 dB的声强级，120 dB的声强级已使耳朵有痛觉。因此，对声波来说，如果写下
+\begin{equation}
+    \label{Eq:I:47:2}
+    P=P_0+P_e~,~~\rho=\rho_0+\rho_e
+\end{equation}
+那么与$P_0$相比压强变化值$P_e$总是很小，而与密度$\rho_0$相比密度变化值$\rho_e$也总是很小。于是
+\begin{equation}
+    \label{Eq:I:47:3}
+    P_0 + P_e = f(\rho_0 + \rho_e) = f(\rho_0)+\rho_ef'(\rho_0)
+\end{equation}
+这里$P_0 =f(\rho_0)$，而$f'(\rho_0)$是当$\rho =\rho_0$时得出的$f(\rho)$的微商值。只是由于$\rho_e$很小，我们才可以取第二步等式。这样我们就发现额外压强$P_e$正比于额外密度$\rho_e$，如果称比例系数为$\kappa$ ，则
+\begin{equation}
+    \label{Eq:I:47:4}
+    P_e=\kappa\rho_e,~\text{这里}~\kappa=f'(\rho_0)=\left(\frac{dP}{d\rho}\right)_0 ~~~~~~~~ \text{(\uppercase\expandafter{\romannumeral2})}
+\end{equation}
+所以，对于\uppercase\expandafter{\romannumeral2}来说我们要得到的就是这个非常简单的关系式。
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.43\textwidth]{Chapter47/在x处空气的位移为}
+    \caption{\footnotesize 在$x$处空气的位移为$\chi(x,~t)$，在$x +\Delta x$处为$\chi(x +\Delta t,~t)$。平面波中，截面为单位面积的空气柱原来的体积为$\Delta x$； 新的体积为\\$\Delta x + \chi(x+\Delta x,~t)-\chi(x,~t)$}
+    \label{figure:在x处空气的位移为}
+\end{wrapfigure}
+
+现在来考虑\uppercase\expandafter{\romannumeral1}。我们假设没有被声波扰动的那部分空气的位置是$x$，而在时刻$t$由声波引起的位移是$\chi(x,~t)$，因此新的位置是$x+\chi(x,t)$，如图\ref{figure:在x处空气的位移为}所示。我们还假设邻近的未受扰动的一部分空气的位置是$x +\Delta x$，而其新的位置是$x +\Delta x +\chi(x +\Delta x,~t)$。现在可以用下述方法来求出密度的变化。因为只限于平面波，所以我们可取垂直于$x$方向的单位面积，$x$方向就是声波传播的方向。于是由单位面积和$\Delta x$所围成的那部分空气的质量就是$\rho_0 \Delta x$，这里$\rho_0$是未受扰动的或平衡状态下的空气密度。这些空气在声波驱动下移到$x +\chi(x,~t)$与$x +\Delta x +\chi(x +\Delta x,~t)$之间，这样，这个区间内的气体质量应与未扰动前处在$\Delta x$区间内的气体质量相同。如果以$\rho$表示新的密度，就有
+\begin{equation}
+    \label{Eq:I:47:5}
+    \rho_0 \Delta x = \rho\left[x+\Delta x+\chi(x+\Delta x,~t) - x - \chi(x,~t)\right]
+\end{equation}
+因为$\Delta x$很小，我们可以写出
+\begin{equation*}
+    \chi(x+\Delta x,~t) - \chi(x,~t) = \left(\frac{\partial \chi}{\partial x}\right)\Delta x
+\end{equation*}
+这个微商是偏微商，因为$\chi$与时间$t$及$x$都有关系。我们的方程于是就变为
+\begin{equation}
+    \label{Eq:I:47:6}
+    \rho_0\Delta x = \rho\left(\frac{\partial\chi}{\partial x}\Delta x+\Delta x\right)
+\end{equation}
+或
+\begin{equation}
+    \label{Eq:I:47:7}
+    \rho_0 = (\rho_0+\rho_e)\frac{\partial \chi}{\partial x} + \rho_0 + \rho_e
+\end{equation}
+由于在声波中所有的变化都很小，因此$\rho_e$很小，$\chi$很小，$\frac{\partial\chi}{\partial x}$也很小。所以在我们刚找到的关系式
+\begin{equation}
+    \label{Eq:I:47:8}
+    \rho_e = -\rho_0\frac{\partial\chi}{\partial x} - \rho_e\frac{\partial\chi}{\partial x}
+\end{equation}
+中，与$\rho_0\frac{\partial\chi}{\partial x}$相比我们可以略去$\rho_e\frac{\partial\chi}{\partial x}$。这样我们就得到\uppercase\expandafter{\romannumeral1}所要求的关系式
+\begin{equation}
+    \label{Eq:I:47:9}
+    \rho_e = -\rho_0\frac{\partial\chi}{\partial x} ~~~~~~~~ \text{(\uppercase\expandafter{\romannumeral1})}
+\end{equation}
+这个方程从物理上是可以预料的；如果位移随着$x$而改变，那么就会有密度上的变化。式中的符号也是正确的：如果位移$\chi$随着$x$而增加，那么空气就扩展开来，密度就一定会下降。
+
+\begin{wrapfigure}{r}{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.44\textwidth]{Chapter47/作用在垂直于x的单位面积上的压强在正x方向上所产生的净力是}
+    \caption{\footnotesize 作用在垂直于$x$的单位面积上的压强在正$x$方向上所产生的净力是$-\left(\frac{\partial P}{\partial x}\Delta x\right)$}
+    \label{figure:作用在垂直于x的单位面积上的压强在正x方向上所产生的净力是}
+\end{wrapfigure}
+现在我们需要第三个方程，那就是由压强改变所产生的运动方程。如果我们知道力与压强之间的关系，就可以得出运动方程。现在我们取一薄层空气，它的厚度为$\Delta x$，侧面积为与$x$相垂直的单位面积，则此薄层气体的质量是$\rho_0 \Delta x$，其加速度为$\frac{\partial^2\chi}{\partial t^2}$，于是质量与加速度的乘积就是$\rho_0\Delta x\left(\frac{\partial^2\chi}{\partial t^2}\right)$（当$\Delta x$很小时，不管加速度$\partial^2\chi/\partial t^2$是指薄块边上的值还是指某个中间位置的值都没有关系）。假如现在我们求得在垂直于$x$的单位面积上给予这层空气的作用力，那么它就等于$\rho_0 \Delta x (\partial^2 \chi /\partial t^2)$。在$x$处沿$+x$方向，单位面积所受的力是$P(x,~t)$，在$(x +\Delta x)$处沿$-x$方向，单位面积所受的力是$P(x +\Delta x,~t)$（图\ref{figure:作用在垂直于x的单位面积上的压强在正x方向上所产生的净力是}），由于$\Delta x$甚小，并且$P$中的变化部分只有额外压强$P_e$，结果我们得到
+\begin{equation}
+    \label{Eq:I:47:10}
+    P(x,~t) - P(x+\Delta x,~t) = \frac{-\partial P}{\partial x} \Delta x = \frac{-\partial P_e}{\partial x} \Delta x
+\end{equation}
+最后，对于\uppercase\expandafter{\romannumeral3}，我们有
+\begin{equation}
+    \label{Eq:I:47:11}
+    \rho_0\frac{\partial^2\chi}{\partial t^2} = -\kappa\frac{\partial P_e}{\partial x} ~~~~~~~~ \text{(\uppercase\expandafter{\romannumeral3})}
+\end{equation}
+这样就有足够的方程将各件事情联系起来，并将变量减少到一个，比如说$\chi$。利用（\uppercase\expandafter{\romannumeral2}）式能从（\uppercase\expandafter{\romannumeral3}）式中消去$P_e$，于是有
+\begin{equation}
+    \label{Eq:I:47:12}
+    \rho_0\frac{\partial^2\chi}{\partial t^2} = -\kappa\frac{\partial \rho_e}{\partial x}
+\end{equation}
+再利用（\uppercase\expandafter{\romannumeral1}）式就可消去$\rho_e$。这样我们发现$\rho_0$也被消去，余下的就是
+\begin{equation}
+    \label{Eq:I:47:13}
+    \frac{\partial^2\chi}{\partial t^2} = \kappa \frac{\partial^2\chi}{\partial x^2}
+\end{equation}
+我们令$c_s^2=\kappa$，因此可写出
+\begin{equation}
+    \label{Eq:I:47:14}
+    \frac{\partial^2\chi}{\partial x^2} = \frac{1}{c_s^2}\frac{\partial^2\chi}{\partial t^2}
+\end{equation}
+这就是描写物质中声波行为的波动方程。
+
+\section{波动方程的解}
+
+现在我们可以来看看这个方程是否确实描写了物质中声波的基本性质。我们希望由此推出声脉冲或扰动将以恒定速率运动，并且希望证实两个不同的脉冲可以相互穿过——叠加原理。我们还想证实声波可以往右或往左传播。所有这些性质都应当包括在这一个方程之中。
+
+我们已经说过，任何以恒定速度$v$运动的平面波的扰动都具有形式$f(x-vt)$。现在必须来看一下$\chi (x,~t)=f(x-vt)$是否为波动方程的一个解。在计算$\partial \chi /\partial x$后，就得到$\partial\chi /\partial x =f'(x-vt)$，再进行一次微商，则得到
+\begin{equation}
+    \label{Eq:I:47:15}
+    \frac{\partial^2\chi}{\partial x^2} = f''(x-vt)
+\end{equation}
+
+这同一函数对$t$的微商是$-v$乘以函数的微商，即$\frac{\partial\chi}{\partial t}=-vf'(x-vt)$，而二阶时间微商是
+\begin{equation}
+    \label{Eq:I:47:16}
+    \frac{\partial^2\chi}{\partial t^2} = v^2 f''(x-vt)
+\end{equation}
+很明显，倘使波速$v$等于$c_s$，$f(x-vt)$就满足波动方程。因此，根据力学定律我们发现任何声扰动以速度$c_s$传播。此外，我们还发现
+\begin{equation*}
+    c_s = \kappa^{\frac{1}{2}}=\left(\frac{dP}{d\rho}\right)^{\frac{1}{2}}_0
+\end{equation*}
+这样我们就把波速与介质的性质联系起来了 。
+
+假如考虑一列沿相反方向传播的波，那么$\chi(x,~t)=g(x+vt)$，不难看出这样一种扰动也满足波动方程。这列波跟从左向右行进的波的唯一差别就是$v$前的符号，但是，无论函数中的变量是$x-vt$还是$x+vt$，都不影响$\partial^2 \chi /\partial t^2$的符号，因为它包含的只是$v^2$项。由此可见我们具有以速度$c_s$往左或往右传播的波的解答。
+
+叠加性是非常有趣的问题。假定我们已经找到波动方程的一个解，比方说$\chi_1$，这意味着$\chi_1$对$x$的二阶微商等于 乘以$\chi_1$对$t$的二阶微商。现在如果有任意另一个解$\chi_2$亦具有同样的性质。假定把这两个解叠加起来，就有
+\begin{equation}
+    \label{Eq:I:47:17}
+    \chi(x,~t)=\chi_1(x,~t)+\chi_2(x,~t)
+\end{equation}
+我们要证实$\chi(x,~t)$也是波，即$\chi$也满足波动方程。这个结果很容易证明，因为我们有
+\begin{equation}
+    \label{Eq:I:47:18}
+    \frac{\partial^2\chi}{\partial x^2} = \frac{\partial^2\chi_1}{\partial x^2} + \frac{\partial^2\chi_2}{\partial x^2}
+\end{equation}
+以及
+\begin{equation}
+    \label{Eq:I:47:19}
+    \frac{\partial^2\chi}{\partial t^2} = \frac{\partial^2\chi_1}{\partial t^2} + \frac{\partial^2\chi_2}{\partial t^2}
+\end{equation}
+所以就有$\partial^2\chi/\partial x^2 = \left(\frac{1}{c^2}\right)\partial^2\chi/\partial t^2$。这样我们就证实了叠加原理。叠加原理的证明正是建立在波动方程对$\chi$是线性的这个事实上的。
+
+现在我们可以预期，沿$x$方向传播而其电场在$y$方向上的偏振平面光波将满足波动方程
+\begin{equation}
+    \label{Eq:I:47:20}
+    \frac{\partial^2E_y}{\partial x^2} = \frac{1}{c^2}\frac{\partial^2E_y}{\partial t^2}
+\end{equation}
+这里$c$是光速。这个波动方程是麦克斯韦方程的结论之一。电动力学的定律将导致光的波动方程，正像力学定律导致声的波动方程一样。
+
+\section{声速}
+
+上面对声波的波动方程的推导使我们得到了一个公式，它把波速与正常大气压下压强对密度的变化率联系在一起
+\begin{equation}
+    \label{Eq:I:47:21}
+    c_s^2 = \left(\frac{dP}{d\rho}\right)_0
+\end{equation}
+在计算这个变化率时，必须知道温度如何变化。在声波中，我们预期压缩区域的温度会升高，而稀薄区域的温度会降低。牛顿第一个计算了压强对密度的变化率，他假设温度保持不变。他论证热量十分迅速地由一个区域传导到另一个区域，以致温度不可能升高或降低。在这种论证下得到了声波的等温速率，但这是错误的。正确的推导是后来由拉普拉斯作出的。他提出了相反的概念——在声波中压强与温度进行着绝热变化。只要波长远大于平均自由程，热量从压缩区域往稀薄区域的流动是可以忽略的。在这种条件下，声波中的少量热流并不影响速度，虽然它吸收了一点声能。我们可以正确地预计到这种吸收将随着波长趋近于平均自由程而增加，但这种波长大约比可闻声波波长的百万分之一还要小。
+
+声波中压强随密度的实际变化是一种没有热流的变化。这相当于绝热变化。对这种情况，$PV\gamma=\text{常数}$，这里$V$是体积。由于密度反比于$V$，$P$与$\rho$之间的绝热关系是
+\begin{equation}
+    \label{Eq:I:47:22}
+    P=\text{常数}\rho^\gamma
+\end{equation}
+由此可得$dP /d\rho = \gamma P /\rho$。于是对于声速就有关系式
+\begin{equation}
+    \label{Eq:I:47:23}
+    c_s^2 = \frac{\gamma P}{\rho}
+\end{equation}
+我们也可写为$c_s^2 = \gamma PV/(\rho V)$，再利用等式$PV=NkT$，而且由于$\rho V$是气体质量，它也可表示为$Nm$或$\mu$，这里$m$是一个分子的质量，$\mu$是分子量，由此可得
+\begin{equation}
+    \label{Eq:I:47:24}
+    c_s^2 = \frac{\gamma kT}{m} = \frac{\gamma RT}{\mu}
+\end{equation}
+从此式显然可知声速只与气体温度有关，而与压强或密度无关。我们还注意到
+\begin{equation}
+    \label{Eq:I:47:25}
+    kT = \frac{1}{3}m\langle v^2 \rangle
+\end{equation}
+这里$\langle v^2 \rangle$是分子的方均速率。因此$c_s^2=\left(\frac{\gamma}{3}\right)\langle v^2 \rangle$，或
+\begin{equation}
+    \label{Eq:I:47:26}
+    c_s = \left(\frac{\gamma}{3}\right)^{\frac{1}{2}} v_\text{平均}
+\end{equation}
+这个式子表明声速的大小大致等于$1/\sqrt{3}$乘以分子的某种平均速率$v_\text{平均}$（方均速率的平方根）。换句话说，声速与分子速率具有同样的数量级，实际上多少小于分子平均速率。
+
+当然，我们可以预料到会有这样的结果，因为扰动像压强的变化一样，归根结底是由于分子运动而传播的。然而，这种论证并不能告诉我们精确的传播速率；因为既可以说声波主要是由最快的分子传播的，也可以说主要是由最慢的分子传播的。一种合乎情理的并令人满意的看法是认为声速大约为分子平均速率$v_\text{平均}$的一半。
