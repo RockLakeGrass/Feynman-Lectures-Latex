@@ -100,7 +100,7 @@
 在分析比较基本的一类力（不是像摩擦力，而是电力或引力之类的力）时形成了一种有趣的、非常重要的概念。因为乍看起来，力比反平方定律所指出的要复杂得多，而这些定律仅当相互作用物体处于静止时才成立，所以就需要一种改进的方法来处理当物体开始以一种复杂的方式运动时所产生的非常复杂的力。经验表明，用所谓“场”的概念这种方法，对于分析这种类型的力是非常有用的。比如说，以电力为例来说明这个概念，假定我们有两个电荷$q_1$、$q_2$分别位于$P$点和$R$点。那么两个电荷之间的力为
 \begin{equation}
     \label{Eq:I:12:3}
-    \boldsymbol{F}=\frac{q_1q_2 \boldsymbol{r}}{r^3}
+    \boldsymbol{F}=\frac{q_1q_2 \boldsymbol{r}}{4 \pi \varepsilon_0 r^3}
 \end{equation}
 如果用场的概念来分析这个力，我们说$P$处的电荷$q_1$在$R$处产生了一种“状况”，而当电荷$q_2$被置于$R$处时，它就“感受”到这个作用力。这是一种描写力的方法，或许是奇特的。我们说，作用在$R$处电荷$q_2$上的力$\boldsymbol{F}$可以写成两部分。力等于电量$q_2$乘以一个量$\boldsymbol{E}$，不管有没有电荷$q_2$，$\boldsymbol{E}$都应当是存在的（只要我们将所有其他的电荷都保持在原来的位置上）。我们说$\boldsymbol{E}$是由$q_1$产生的“状况”，$\boldsymbol{F}$是$q_2$对于$\boldsymbol{E}$的响应。$\boldsymbol{E}$叫做电场，它是一个矢量。由$P$处电荷$q_1$在$R$处产生的电场$\boldsymbol{E}$的公式是电荷$q_1$乘以常数$1/4 \pi \varepsilon_0$除以$r^2$（$r$是$P$到$R$的距离），它作用于沿矢径的方向（矢径$\boldsymbol{r}$除以它自身的长度），因此$\boldsymbol{E}$的表示式为
 \begin{equation}
@@ -128,18 +128,18 @@
 或者，根据上面给出的定义
 \begin{equation}
     \label{Eq:I:12:7}
-    \boldsymbol{E}=\sum_{i} \frac{q_ir_i}{4\pi \varepsilon_0 r^3_i}
+    \boldsymbol{E}=\sum_{i} \frac{q_i \boldsymbol{r}_i}{4\pi \varepsilon_0 r_i^3}
 \end{equation}
 
 同样的方法适用于引力吗？牛顿把两个物体$m_1$和$m_2$之间的力表示成$\boldsymbol{F}=-Gm_1m_2 \cdot \boldsymbol{r}/r^3$。但是按照场的概念，我们可以说物体$m_1$在其周围空间产生了引力场$\boldsymbol{C}$，$m_2$所受的力则由
 \begin{equation}
     \label{Eq:I:12:8}
-    \boldsymbol{E}=m_2\boldsymbol{C}
+    \boldsymbol{F}=m_2\boldsymbol{C}
 \end{equation}
 给出。同电场的情况完全类似
 \begin{equation}
     \label{Eq:I:12:9}
-    \boldsymbol{C}_i=\frac{-Gm_i\boldsymbol{r}_i}{r^3_i}
+    \boldsymbol{C}_i=\frac{-Gm_i\boldsymbol{r}_i}{r_i^3}
 \end{equation}
 由几个物体产生的引力场为
 \begin{equation}
