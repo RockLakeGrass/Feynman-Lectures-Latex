@@ -100,12 +100,12 @@
 我们暂且假设$\gamma$与$\omega_0$相比极其小，所以$\omega_0^2 - \gamma^2/4$肯定是正值，求它的平方根是不会有问题的。麻烦的事情在于我们得到了两个解，即
 \begin{equation}
     \label{Eq:I:24:14}
-    \alpha = \frac{i\gamma}{2} + \sqrt{\omega_0^2 - \frac{\gamma^2}{4}} = \frac{i\gamma}{2} + \omega\gamma
+    \alpha = \frac{i\gamma}{2} + \sqrt{\omega_0^2 - \frac{\gamma^2}{4}} = \frac{i\gamma}{2} + \omega_\gamma
 \end{equation}
 和
 \begin{equation}
     \label{Eq:I:24:15}
-    \alpha = \frac{i\gamma}{2} - \sqrt{\omega_0^2 - \frac{\gamma^2}{4}} = \frac{i\gamma}{2} - \omega\gamma
+    \alpha = \frac{i\gamma}{2} - \sqrt{\omega_0^2 - \frac{\gamma^2}{4}} = \frac{i\gamma}{2} - \omega_\gamma
 \end{equation}
 假定我们没有注意到平方根有两个可能值，而来考虑第一个解。我们知道对于$x$的一个解是$x_1=Ae^{i\alpha_1t}$，这里$A$是任意常数。现在，将$\alpha_1$代入，因为出现的次数很多，写起来又很长，所以我们令$\sqrt{\omega_0^2 - \gamma^2/4}=\omega_\gamma$。这样，$i\alpha_1 = -\gamma/2 + i\omega_\gamma$，我们就得到$x_1 = Ae^{(-\gamma/2 + i\omega_\gamma)t}$，因为指数具有奇妙的性质，所以此式还可写成
 \begin{equation}
@@ -200,7 +200,7 @@
 
 现在我们来讨论，在知道了运动的初始状态后，如何求出这两个系数$A$和$B$（或$A$和$A^*$）。
 
-设在$t=0$时，已知$x=x+0$和$dx/dt=v_0$。若我们在表示式
+设在$t=0$时，已知$x=x_0$和$dx/dt=v_0$。若我们在表示式
 \begin{equation*}
     x=e^{-\gamma t/2}(Ae^{i\omega_\gamma t}+A^*e^{-i\omega_\gamma t})
 \end{equation*}
@@ -214,7 +214,7 @@
 \begin{equation*}
     v_0=(-\gamma/2)(A+A^*)+i\omega_\gamma(A-A^*) = -\gamma x_0/2+i\omega_\gamma(2iA_I)
 \end{equation*}
-这里$A=A_R-iA_I$，而$A^*=A_R+iA_I$，因此得到
+这里$A=A_R+iA_I$，而$A^*=A_R-iA_I$，因此得到
 \begin{equation*}
     A_R=\frac{x_0}{2}
 \end{equation*}

@@ -48,7 +48,7 @@
 \end{equation*}
 所以
 \begin{equation*}
-    F_t\frac{ds}{dt}=-mg(\frac{dh}{ds})(\frac{ds}{dt})=-mg\frac{dh}{ds}
+    F_t\frac{ds}{dt}=-mg(\frac{dh}{ds})(\frac{ds}{dt})=-mg\frac{dh}{dt}
 \end{equation*}
 因为$ds$被消掉了，于是我们就得到$-mg(dh/dt)$，与前面所证明的一样，它等于$-mgh$的时间变化率。
 
@@ -213,8 +213,8 @@
 所以
 \begin{equation*}
     \begin{aligned}
-        \frac{dr_{ij}}{dt}&=\frac{1}{2r_{ij}}[2(x_i - x_j)(\frac{x_i}{dt} - \frac{x_j}{dt}) + 2(y_i - y_j)(\frac{y_i}{dt} - \frac{y_j}{dt}) + 2(z_i - z_j)(\frac{z_i}{dt} - \frac{z_j}{dt})] \\
-        &=\boldsymbol{r}_{ij} \cdot \frac{\boldsymbol{v}_i - \boldsymbol{v}_j}{r_{ij}}=\boldsymbol{r}_{ij} \cdot \frac{\boldsymbol{v}_i}{r_{ij}} - \boldsymbol{r}_{ji} \cdot \frac{\boldsymbol{v}_j}{r_{ji}}
+        \frac{dr_{ij}}{dt}&=\frac{1}{2r_{ij}}[2(x_i - x_j)(\frac{dx_i}{dt} - \frac{dx_j}{dt}) + 2(y_i - y_j)(\frac{y_i}{dt} - \frac{y_j}{dt}) + 2(z_i - z_j)(\frac{z_i}{dt} - \frac{z_j}{dt})] \\
+        &=\boldsymbol{r}_{ij} \cdot \frac{\boldsymbol{v}_i - \boldsymbol{v}_j}{r_{ij}}=\boldsymbol{r}_{ij} \cdot \frac{\boldsymbol{v}_i}{r_{ij}} + \boldsymbol{r}_{ji} \cdot \frac{\boldsymbol{v}_j}{r_{ji}}
     \end{aligned}
 \end{equation*}
 由于$\boldsymbol{r}_{ij} = -\boldsymbol{r}_{ji}$，而$r_{ij}=r_{ji}$，于是
@@ -248,9 +248,9 @@
 \end{equation*}
 现在所有与$P$具有相同距离$r$的$dm$将产生相同的$dC_x$，因此，我们立即可以把$dm$写成$\rho$到$\rho+d\rho$之间这一圆环中的总质量，即$dm=\mu 2 \pi \rho d\rho$（若$d\rho \ll \rho$，$2\pi \rho d\rho$就是半径为$\rho$、宽度为$d\rho$的圆环面积），这样
 \begin{equation*}
-    dC_x = G \mu 2 \pi \rho \frac{d \rho a}{r^3}
+    dC_x = -G \mu 2 \pi \rho \frac{d \rho a}{r^3}
 \end{equation*}
-于是，因为$r^2=\rho^2+a^2$，$-\rho d \rho=rdr$，所以有
+于是，因为$r^2=\rho^2+a^2$，$\rho d \rho=rdr$，所以有
 \begin{equation}
     \label{Eq:I:13:17}
     C_x = - 2\pi G \mu a \int_{a}^{\infty} \frac{dr}{r^2} = - 2\pi G\mu a(\frac{1}{a} - \frac{1}{\infty})= - 2 \pi G \mu
@@ -274,7 +274,7 @@
 \end{equation*}
 其中$\mu=m/(4\pi a^2)$是球壳的质量面密度（球带的面积正比于它的轴宽是一个一般的规则）。$dm$的势能应该是
 \begin{equation*}
-    dW=-\frac{Gm'dm}{r} = -\frac{-Gm'2\pi a \mu dx}{r}
+    dW=-\frac{Gm'dm}{r} = -\frac{Gm'2\pi a \mu dx}{r}
 \end{equation*}
 但我们看出
 \begin{equation*}
