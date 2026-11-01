@@ -95,7 +95,7 @@
 \begin{wrapfigure}{l}{0.45\textwidth}
     \centering
     \includegraphics[width=0.43\textwidth]{Chapter47/在x处空气的位移为}
-    \caption{\footnotesize 在$x$处空气的位移为$\chi(x,~t)$，在$x +\Delta x$处为$\chi(x +\Delta t,~t)$。平面波中，截面为单位面积的空气柱原来的体积为$\Delta x$； 新的体积为\\$\Delta x + \chi(x+\Delta x,~t)-\chi(x,~t)$}
+    \caption{\footnotesize 在$x$处空气的位移为$\chi(x,~t)$，在$x +\Delta x$处为$\chi(x +\Delta x,~t)$。平面波中，截面为单位面积的空气柱原来的体积为$\Delta x$； 新的体积为\\$\Delta x + \chi(x+\Delta x,~t)-\chi(x,~t)$}
     \label{figure:在x处空气的位移为}
 \end{wrapfigure}
 
@@ -144,7 +144,7 @@
 最后，对于\uppercase\expandafter{\romannumeral3}，我们有
 \begin{equation}
     \label{Eq:I:47:11}
-    \rho_0\frac{\partial^2\chi}{\partial t^2} = -\kappa\frac{\partial P_e}{\partial x} ~~~~~~~~ \text{(\uppercase\expandafter{\romannumeral3})}
+    \rho_0\frac{\partial^2\chi}{\partial t^2} = -\frac{\partial P_e}{\partial x} ~~~~~~~~ \text{(\uppercase\expandafter{\romannumeral3})}
 \end{equation}
 这样就有足够的方程将各件事情联系起来，并将变量减少到一个，比如说$\chi$。利用（\uppercase\expandafter{\romannumeral2}）式能从（\uppercase\expandafter{\romannumeral3}）式中消去$P_e$，于是有
 \begin{equation}
@@ -201,7 +201,7 @@
     \label{Eq:I:47:19}
     \frac{\partial^2\chi}{\partial t^2} = \frac{\partial^2\chi_1}{\partial t^2} + \frac{\partial^2\chi_2}{\partial t^2}
 \end{equation}
-所以就有$\partial^2\chi/\partial x^2 = \left(\frac{1}{c^2}\right)\partial^2\chi/\partial t^2$。这样我们就证实了叠加原理。叠加原理的证明正是建立在波动方程对$\chi$是线性的这个事实上的。
+所以就有$\partial^2\chi/\partial x^2 = \left(\frac{1}{c_s^2}\right)\partial^2\chi/\partial t^2$。这样我们就证实了叠加原理。叠加原理的证明正是建立在波动方程对$\chi$是线性的这个事实上的。
 
 现在我们可以预期，沿$x$方向传播而其电场在$y$方向上的偏振平面光波将满足波动方程
 \begin{equation}
@@ -219,7 +219,7 @@
 \end{equation}
 在计算这个变化率时，必须知道温度如何变化。在声波中，我们预期压缩区域的温度会升高，而稀薄区域的温度会降低。牛顿第一个计算了压强对密度的变化率，他假设温度保持不变。他论证热量十分迅速地由一个区域传导到另一个区域，以致温度不可能升高或降低。在这种论证下得到了声波的等温速率，但这是错误的。正确的推导是后来由拉普拉斯作出的。他提出了相反的概念——在声波中压强与温度进行着绝热变化。只要波长远大于平均自由程，热量从压缩区域往稀薄区域的流动是可以忽略的。在这种条件下，声波中的少量热流并不影响速度，虽然它吸收了一点声能。我们可以正确地预计到这种吸收将随着波长趋近于平均自由程而增加，但这种波长大约比可闻声波波长的百万分之一还要小。
 
-声波中压强随密度的实际变化是一种没有热流的变化。这相当于绝热变化。对这种情况，$PV\gamma=\text{常数}$，这里$V$是体积。由于密度反比于$V$，$P$与$\rho$之间的绝热关系是
+声波中压强随密度的实际变化是一种没有热流的变化。这相当于绝热变化。对这种情况，$PV^{\gamma}=\text{常数}$，这里$V$是体积。由于密度反比于$V$，$P$与$\rho$之间的绝热关系是
 \begin{equation}
     \label{Eq:I:47:22}
     P=\text{常数}\rho^\gamma

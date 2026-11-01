@@ -52,7 +52,7 @@
     \label{Eq:I:45:3}
     \Delta U = \Delta Q - P\Delta V
 \end{equation}
-比较式（\ref{Eq:I:45:2}）和式（\ref{Eq:I:45:3}），一开始人们可能会猜想 ，但这是不正确的。为了得到正确的关系，我们先假设在保持体积不变，即$\Delta V =0$时加入气体一些热量$\Delta Q$ 。由$\Delta V =0$，从式（\ref{Eq:I:45:3}）可知$\Delta U =\Delta Q$，而式（\ref{Eq:I:45:2}）告诉我们$\Delta U =(\partial U /\partial T) V \Delta T$，所以$(\partial U /\partial T) V =\Delta Q /\Delta T$。比值$\Delta Q /\Delta T$是在体积不变时为了使温度改变一度所须加入物质中的热量，并称为定容比热 ，用符号$C_V$表示。这样，我们就论证了
+比较式（\ref{Eq:I:45:2}）和式（\ref{Eq:I:45:3}），一开始人们可能会猜想$P=-(\partial U/\partial V)_T$，但这是不正确的。为了得到正确的关系，我们先假设在保持体积不变，即$\Delta V =0$时加入气体一些热量$\Delta Q$ 。由$\Delta V =0$，从式（\ref{Eq:I:45:3}）可知$\Delta U =\Delta Q$，而式（\ref{Eq:I:45:2}）告诉我们$\Delta U =(\partial U /\partial T) V \Delta T$，所以$(\partial U /\partial T) V =\Delta Q /\Delta T$。比值$\Delta Q /\Delta T$是在体积不变时为了使温度改变一度所须加入物质中的热量，并称为定容比热 ，用符号$C_V$表示。这样，我们就论证了
 \begin{equation}
     \label{Eq:I:45:4}
     \left(\frac{\partial U}{\partial T}\right)_V = C_V
@@ -133,7 +133,7 @@
 这里$A$和$B$表示不同的量，如力和长度，压强和体积，等等，那么就可以通过分别以$A$、$B$代替$P$、$V$，应用在气体情况下所得到的结果。例如，考虑电池中的电势差或“电压”$E$及流过电池的电荷$\Delta Z$。我们知道，一个可逆电池（如蓄电池）所做的功是$E \Delta Z$。（因为在功中不包括$P \Delta V$这一项，因而要求电池的体积不变。）我们来看看热力学能对电池内的性能说些什么。如果在式（\ref{Eq:I:45:6}）中以$E$代替$P$，以$Z$代替$V$，就得到
 \begin{equation}
     \label{Eq:I:45:9}
-    \frac{\Delta U}{\Delta Z} = -T\left(\frac{\partial E}{\partial T}\right)_Z - E
+    \frac{\Delta U}{\Delta Z} = T\left(\frac{\partial E}{\partial T}\right)_Z - E
 \end{equation}
 式（\ref{Eq:I:45:9}）说明在电荷$\Delta Z$通过电池时内能$U$会发生变化。为什么$\Delta U /\Delta Z$不简单地是电池的电压E 呢？回答是，在电荷通过电池时，真实的电池会发热。电池的内能之所以会发生变化，首先是因为电池在外电路上做功，其次是由于电池被加热。值得注意的是，第二部分又可以借助于电池的电压随温度的变化来表示。附带提一下，在电荷通过电池时，就会发生化学反应，式（\ref{Eq:I:45:9}）为测量产生一种化学反应所需要的能量提供了一种别致的方法。我们所要做的一切只是制造一个能在反应中工作的电池，测量电压，再测定当电池中不流出电荷时电压随温度变化的关系！
 
@@ -258,7 +258,7 @@
 \end{equation*}
 将这个$I(\omega)$的表示式代入$U/V$的等式中，就有
 \begin{equation*}
-    \frac{U}{V}=\frac{1}{\pi^2c^2}\int^\infty_0 \frac{\hbar\omega^3}{e^{\hbar\omega/kT} - 1}d\omega
+    \frac{U}{V}=\frac{1}{\pi^2c^3}\int^\infty_0 \frac{\hbar\omega^3}{e^{\hbar\omega/kT} - 1}d\omega
 \end{equation*}
 如以$x=\hbar\omega/kT$代换，就得
 \begin{equation*}
