@@ -59,7 +59,7 @@
 因为$(i\omega)^2=-\omega^2$。把$k/m=\omega_0^2$代入，将此式略加简化，即得
 \begin{equation}
     \label{Eq:I:23:5}
-    \hat{x} = \frac{\hat{F}}{m(\omega_0^2 - \omega)}
+    \hat{x} = \frac{\hat{F}}{m(\omega_0^2 - \omega^2)}
 \end{equation}
 当然，这就是我们前面得出的解；由于$m(\omega_0^2 -\omega^2)$是实数，故$\hat{F}$和$\hat{x}$的辐角相同（或者，当$\omega^2>\omega_0^2$时，可能相差180$^\circ$），所以就像前面说的一样，$\hat{x}$的模——它量度振动有多远——与$\hat{F}$的大小差一个因子$1/[m(\omega_0^2 - \omega^2)]$，当$\omega$接近$\omega_0$时，这个因子变得非常大。因此，当适当选择外加频率$\omega$时，我们会得到一个非常强的响应。（假如在弦的一端悬挂一个摆，用一个适当的频率使它摆动，可以摆得很高。）
 
@@ -192,7 +192,7 @@
 假如我们把电容器上的电荷$q$类比为力学系统的位移$x$，可以看到，电流$I=dq/dt$，它相应于速度，$1/C$相应于弹性系数$k$，$R$相应于方程（\ref{Eq:I:23:6}）中的电阻系数$c=m\gamma$。十分有趣的是还存在另一个与质量相对应的电路元件！这是一个线圈，当线圈内有电流时，在它内部就建立了磁场。变化的磁场在线圈内产生电压，电压的大小与$dI/dt$成正比（实际上，这就是变压器的工作原理）。磁场与电流成正比，在这种线圈内的（所谓）感生电压与电流的变化率成正比
 \begin{equation}
     \label{Eq:I:23:16}
-    V=L\frac{dI}{dt}=L\frac{d^q}{dt^2}
+    V=L\frac{dI}{dt}=L\frac{d^2q}{dt^2}
 \end{equation}
 系数$L$是自感，它与机械振动回路系统中的质量相对应。
 
@@ -230,7 +230,7 @@
             阻抗 & 曳力系数($c=\gamma m$) & 电阻($R=\gamma L$)  \\ 
             刚性 & 刚性($k$) & 电容的倒数($1/C$)  \\ 
             共振频率 & $\omega_0^2=k/m$ & $\omega_0^2=1/(LC)$   \\ 
-            周期 & $t_0=2\pi\sqrt{m/k}$ & $t_0=2\pi=\sqrt{LC}$  \\ 
+            周期 & $t_0=2\pi\sqrt{m/k}$ & $t_0=2\pi\sqrt{LC}$  \\ 
             品质因素 & $Q=\omega_0/\gamma$ & $Q=\omega_0L/R$  \\ \hline
         \end{tabular}
     }

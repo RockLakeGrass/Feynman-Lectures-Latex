@@ -31,7 +31,7 @@
 着某个我们赖以从它量起的地方，它可能就是宇宙中心，可使这些定律成立。但是，我们可以立即证明永远找不到这个中心，因为如果采用其他原点，得出的结果不会有任何差别。换句话说，假设有两个人——乔（Joe），他以某处为原点，和莫（Moe），他有一个与乔平行的坐标系，但原点在另外一个地方（图\ref{figure:两个平行坐标系}）。现在当乔测量空间中某点的位置时，他发现这一点在$x$、$y$和$z$处（通常我们不画出$z$轴，因为在一个图上画那么多轴显得太乱）。另一方面，当莫测量同一点时，他得出一个不同的$x$值（为了区别起见，我们令它为$x'$），而且在原则上$y$值也不同，虽然在这个例子中，两个$y$在数值上相等。因此，有
 \begin{equation}
     \label{Eq:I:11:2}
-    x'=x-a,~y'=y-a,~z'=z-a
+    x'=x-a,~y'=y-b,~z'=z-c
 \end{equation}
 现在，为了完成我们的分析，还必须知道莫会得到怎样的力。假设力沿着某一条线作用，在$x$方向上的力就是总的力在$x$方向上的分量，即力的大小乘以它和$x$轴之间夹角的余弦。这里，我们看到莫和乔采用完全相同的投影，因此得出方程组
 \begin{equation}
@@ -227,12 +227,12 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
 \begin{equation*}
     \boldsymbol{v}=\frac{d\boldsymbol{r}}{dt}
 \end{equation*}
-速度是什么，以及为什么它是一个矢量还可以更形象地来理解：在一个短时间$\Delta t$内粒子运动了多远呢？回答是：$\Delta \boldsymbol{r}$，因此，如果一个粒子某一时刻在“这里”，而另一时刻跑到“那里”，那么用时间间隔$\Delta t = t_2-t_1$,去除位置的矢量差 $\Delta \boldsymbol{r}=r_2-r_1$（$\Delta \boldsymbol{r}$的方向就是图\ref{figure:在短时间间隔}所示的运动方向），就得到“平均速度”矢量。
+速度是什么，以及为什么它是一个矢量还可以更形象地来理解：在一个短时间$\Delta t$内粒子运动了多远呢？回答是：$\Delta \boldsymbol{r}$，因此，如果一个粒子某一时刻在“这里”，而另一时刻跑到“那里”，那么用时间间隔$\Delta t = t_2-t_1$,去除位置的矢量差 $\Delta \boldsymbol{r}=\boldsymbol{r}_2-\boldsymbol{r}_1$（$\Delta \boldsymbol{r}$的方向就是图\ref{figure:在短时间间隔}所示的运动方向），就得到“平均速度”矢量。
 
 换句话说，速度矢量就是在$\Delta t$趋近于零时，在$t+\Delta t$和$t$这两个时刻的矢径之差除以$\Delta t$的极限
 \begin{equation}
     \label{Eq:I:11:10}
-    \boldsymbol{v}=\lim_{\Delta t \to \infty} \frac{\Delta \boldsymbol{r}}{\Delta t}=\frac{d \boldsymbol{r}}{dt}
+    \boldsymbol{v}=\lim_{\Delta t \to 0} \frac{\Delta \boldsymbol{r}}{\Delta t}=\frac{d \boldsymbol{r}}{dt}
 \end{equation}
 因为速度是两个矢量之差，所以它也是一个矢量。因为它的分量是$dx/dt$，$dy/dt$和$dz/dt$，所以这也是速度的正确定义。实际上，从这个论证我们看到，将任一矢量对时间求微商，得到的是一个新的矢量。因此，我们有好几种方法得出新的矢量：（1）乘以一个常数；（2）对时间求微商；（3）两个矢量相加或相减。
 
@@ -276,7 +276,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
     \end{minipage}
 \end{figure}
 
-加速度是速度矢量的变化率的事实有助于我们计算在某些复杂情况下的加速度。例如，假定一个粒子在某一复杂曲线上运动（图\ref{figure:曲线轨道示意图}），并且在一个给定的时刻$t_1$,具有一定速度$v_1$,稍微过一会儿，当到达另一时刻$t_2$时，具有另一个速度$v_2$。什么是加速度呢？答案是：加速度等于这个微小的时间间隔去除速度之差，因此，这里要用到两个速度的差。我们怎样来求两个速度的差呢？为了把两个矢量相减，我们在$v_2$和$v_1$的“端点”之间画一个矢量，即，如图\ref{figure:曲线轨道示意图}所示用$\Delta v$来表示两个矢量之差，对吗？不对！只有当两个矢量的尾端在一起时，才可以这样做！如果我们把一个矢量移到别的地方，再在它们之间画一条线，这是毫无意义的。这一点务必注意！我们需要画一个新的图来做这两个矢量的减法。在图\ref{figure:计算加速度的矢量图}中，$v_1$和$v_2$画成与图\ref{figure:曲线轨道示意图}中的相应的部分平行且相等，这样我们就能讨论加速度了。当然，加速度就是$\Delta v/\Delta t$。有趣的是，我们可以把速度差分成两个部分；即可以认为加速度具有两个分量，一个是沿路径的切线方向的分量$\Delta v_{\parallel}$,另一个是与路径相垂直的分量$\Delta v_{\bot}$,如图\ref{figure:计算加速度的矢量图}所示。当然，路径的切向加速度就是速度长度的变化，也就是速率$v$的平方而变化
+加速度是速度矢量的变化率的事实有助于我们计算在某些复杂情况下的加速度。例如，假定一个粒子在某一复杂曲线上运动（图\ref{figure:曲线轨道示意图}），并且在一个给定的时刻$t_1$,具有一定速度$v_1$,稍微过一会儿，当到达另一时刻$t_2$时，具有另一个速度$v_2$。什么是加速度呢？答案是：加速度等于这个微小的时间间隔去除速度之差，因此，这里要用到两个速度的差。我们怎样来求两个速度的差呢？为了把两个矢量相减，我们在$v_2$和$v_1$的“端点”之间画一个矢量，即，如图\ref{figure:曲线轨道示意图}所示用$\Delta v$来表示两个矢量之差，对吗？不对！只有当两个矢量的尾端在一起时，才可以这样做！如果我们把一个矢量移到别的地方，再在它们之间画一条线，这是毫无意义的。这一点务必注意！我们需要画一个新的图来做这两个矢量的减法。在图\ref{figure:计算加速度的矢量图}中，$v_1$和$v_2$画成与图\ref{figure:曲线轨道示意图}中的相应的部分平行且相等，这样我们就能讨论加速度了。当然，加速度就是$\Delta v/\Delta t$。有趣的是，我们可以把速度差分成两个部分；即可以认为加速度具有两个分量，一个是沿路径的切线方向的分量$\Delta v_{\parallel}$,另一个是与路径相垂直的分量$\Delta v_{\bot}$,如图\ref{figure:计算加速度的矢量图}所示。当然，路径的切向加速度就是速度长度的变化，也就是速率$v$的变化
 \begin{equation}
     \label{Eq:I:11:15}
     a_{\parallel}=\frac{dv}{dt}
@@ -322,7 +322,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
     \label{Eq:I:11:18}
     \boldsymbol{a} \cdot \boldsymbol{a}=a_x^2+a_y^2+a_z^2
 \end{equation}
-也许你要问，“这是对哪些轴而言呢”？它与轴无关，对任何一组轴其结果都是一样。这样，我们得到了一个新的量，一个由矢量“平方”得出的不变量，或标量。如果对任意两个矢量$\boldsymbol{a}$和$\boldsymbol{a}$，定义下面的量
+也许你要问，“这是对哪些轴而言呢”？它与轴无关，对任何一组轴其结果都是一样。这样，我们得到了一个新的量，一个由矢量“平方”得出的不变量，或标量。如果对任意两个矢量$\boldsymbol{a}$和$\boldsymbol{b}$，定义下面的量
 \begin{equation}
     \label{Eq:I:11:19}
     \boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x+a_yb_y+a_zb_z
@@ -342,7 +342,7 @@ $\boldsymbol{a}+\boldsymbol{b}$的几何意义是什么呢？假如在一张纸�
 量$\boldsymbol{a} \cdot \boldsymbol{b}$称为两个矢量$\boldsymbol{a}$和$\boldsymbol{b}$的标积，它具有很多重要而有用的性质。例如，很容易证明
 \begin{equation}
     \label{Eq:I:11:21}
-    \boldsymbol{a} \cdot (\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a} \cdot \boldsymbol{b}+\boldsymbol{b} \cdot \boldsymbol{c}
+    \boldsymbol{a} \cdot (\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a} \cdot \boldsymbol{b}+\boldsymbol{a} \cdot \boldsymbol{c}
 \end{equation}
 还有，计算$\boldsymbol{a} \cdot \boldsymbol{b}$有一个不需要计算$\boldsymbol{a}$和$\boldsymbol{b}$的分量的简单的几何方法：$\boldsymbol{a} \cdot \boldsymbol{b}$是$\boldsymbol{a}$的长度和$\boldsymbol{b}$的长度之积乘以它们之间夹角的余弦。为什么？假设我们选一个$x$轴沿$\boldsymbol{a}$方向的特殊的坐标系，在这种情况下，$a_x$是$\boldsymbol{a}$的唯一分量，它当然就是整个$\boldsymbol{a}$的长度。此时方程式（\ref{Eq:I:11:19}）就简化成$\boldsymbol{a} \cdot \boldsymbol{b}=a_xb_x$，这就是$\boldsymbol{a}$的长度乘$\boldsymbol{b}$在$\boldsymbol{a}$方向上的分量，即$b\cos\theta$
 \begin{equation*}
